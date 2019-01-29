@@ -19,6 +19,7 @@ bugs:
 - minimizing GUI while in follower mode, will stop follower mode and GUI can't be reactivated 
 - bloom doesn't work while mirroring
 - sun bloom shows through planets
+- planets get bloomed as well
 
 changelog:
 v0.1
@@ -48,3 +49,4 @@ v0.3
 - new GUI sliders & check boxes
 v0.4
 - added bloom effect
+- added asteroid belt
