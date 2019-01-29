@@ -22,12 +22,35 @@ c:\vsc projects\solar system\build\cmakefiles\generate.stamp
 c:\vsc projects\solar system\build\debug\solarsystem.ilk
 c:\vsc projects\solar system\build\debug\solarsystem.exe
 c:\vsc projects\solar system\build\debug\solarsystem.pdb
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\cl.command.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\cl.read.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\cl.write.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\custombuild.command.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\custombuild.read.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\custombuild.write.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\link.command.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\link.read.1.tlog
-c:\vsc projects\solar system\build\solarsystem.dir\debug\solarsystem.tlog\link.write.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\application.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\camera.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\controls.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\framebuffer.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\gui.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\imgui.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\imgui_demo.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\imgui_draw.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\imgui_impl_opengl3.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\imgui_impl_sdl.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\imgui_widgets.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\main.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\model.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\node.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\render.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\scenegraph.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\shader.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\skybox.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\texture.obj
+c:\repositories\solar-system\build\solarsystem.dir\debug\vc141.pdb
+c:\repositories\solar-system\build\debug\solarsystem.pdb
+c:\repositories\solar-system\build\debug\solarsystem.exe
+c:\repositories\solar-system\build\debug\solarsystem.ilk
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\cl.command.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\cl.read.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\cl.write.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\custombuild.command.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\custombuild.read.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\custombuild.write.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\link.command.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\link.read.1.tlog
+c:\repositories\solar-system\build\solarsystem.dir\debug\solarsystem.tlog\link.write.1.tlog
