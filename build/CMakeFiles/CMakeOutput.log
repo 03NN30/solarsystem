@@ -9,8 +9,8 @@ The output was:
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 f�r .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:14 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\3.12.3\CompilerIdC\CompilerIdC.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:20 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\3.12.3\CompilerIdC\CompilerIdC.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
   Das Verzeichnis "Debug\" wird erstellt.
   Das Verzeichnis "Debug\CompilerIdC.tlog\" wird erstellt.
@@ -21,7 +21,7 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> c:\VSC Projects\Solar System\build\CMakeFiles\3.12.3\CompilerIdC\.\CompilerIdC.exe
+  CompilerIdC.vcxproj -> c:\Repositories\Solar-System\build\CMakeFiles\3.12.3\CompilerIdC\.\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -29,20 +29,20 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Die Datei "Debug\CompilerIdC.tlog\unsuccessfulbuild" wird gel�scht.
   Aktualisieren des Timestamps von "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\3.12.3\CompilerIdC\CompilerIdC.vcxproj" ist abgeschlossen (Standardziele).
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\3.12.3\CompilerIdC\CompilerIdC.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgef�hrt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.91
+Verstrichene Zeit 00:00:00.89
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "c:/VSC Projects/Solar System/build/CMakeFiles/3.12.3/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "c:/Repositories/Solar-System/build/CMakeFiles/3.12.3/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -54,8 +54,8 @@ The output was:
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 f�r .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:15 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\3.12.3\CompilerIdCXX\CompilerIdCXX.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:22 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\3.12.3\CompilerIdCXX\CompilerIdCXX.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
   Das Verzeichnis "Debug\" wird erstellt.
   Das Verzeichnis "Debug\CompilerIdCXX.tlog\" wird erstellt.
@@ -66,7 +66,7 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> c:\VSC Projects\Solar System\build\CMakeFiles\3.12.3\CompilerIdCXX\.\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> c:\Repositories\Solar-System\build\CMakeFiles\3.12.3\CompilerIdCXX\.\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -74,253 +74,253 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Die Datei "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" wird gel�scht.
   Aktualisieren des Timestamps von "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\3.12.3\CompilerIdCXX\CompilerIdCXX.vcxproj" ist abgeschlossen (Standardziele).
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\3.12.3\CompilerIdCXX\CompilerIdCXX.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgef�hrt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.92
+Verstrichene Zeit 00:00:00.91
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "c:/VSC Projects/Solar System/build/CMakeFiles/3.12.3/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "c:/Repositories/Solar-System/build/CMakeFiles/3.12.3/CompilerIdCXX/CompilerIdCXX.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: c:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp
+Change Dir: c:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_037f1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_098d6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 für .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:16 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_037f1.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:23 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_098d6.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_037f1.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
-  Das Verzeichnis "cmTC_037f1.dir\Debug\cmTC_037f1.tlog\" wird erstellt.
+  Das Verzeichnis "cmTC_098d6.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_098d6.dir\Debug\cmTC_098d6.tlog\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_037f1.dir\Debug\cmTC_037f1.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_098d6.dir\Debug\cmTC_098d6.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_037f1.dir\Debug\\" /Fd"cmTC_037f1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_098d6.dir\Debug\\" /Fd"cmTC_098d6.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\testCCompiler.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26131.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_037f1.dir\Debug\\" /Fd"cmTC_037f1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_098d6.dir\Debug\\" /Fd"cmTC_098d6.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\testCCompiler.c"
   testCCompiler.c
   
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_037f1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_037f1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_037f1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_037f1.dir\Debug\testCCompiler.obj
-  cmTC_037f1.vcxproj -> C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_037f1.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_098d6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_098d6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_098d6.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_098d6.dir\Debug\testCCompiler.obj
+  cmTC_098d6.vcxproj -> C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_098d6.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_037f1.dir\Debug\cmTC_037f1.tlog\unsuccessfulbuild" wird gelöscht.
-  Aktualisieren des Timestamps von "cmTC_037f1.dir\Debug\cmTC_037f1.tlog\cmTC_037f1.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_037f1.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_098d6.dir\Debug\cmTC_098d6.tlog\unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_098d6.dir\Debug\cmTC_098d6.tlog\cmTC_098d6.lastbuildstate".
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_098d6.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:01.02
+Verstrichene Zeit 00:00:00.94
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: c:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp
+Change Dir: c:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_d3911.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_14ece.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 für .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:18 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_d3911.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:24 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_14ece.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_d3911.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
-  Das Verzeichnis "cmTC_d3911.dir\Debug\cmTC_d3911.tlog\" wird erstellt.
+  Das Verzeichnis "cmTC_14ece.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_14ece.dir\Debug\cmTC_14ece.tlog\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_d3911.dir\Debug\cmTC_d3911.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_14ece.dir\Debug\cmTC_14ece.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d3911.dir\Debug\\" /Fd"cmTC_d3911.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_14ece.dir\Debug\\" /Fd"cmTC_14ece.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26131.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d3911.dir\Debug\\" /Fd"cmTC_d3911.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_14ece.dir\Debug\\" /Fd"cmTC_14ece.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
   CMakeCCompilerABI.c
   
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_d3911.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_d3911.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_d3911.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_d3911.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_d3911.vcxproj -> C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_d3911.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_14ece.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_14ece.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_14ece.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_14ece.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_14ece.vcxproj -> C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_14ece.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_d3911.dir\Debug\cmTC_d3911.tlog\unsuccessfulbuild" wird gelöscht.
-  Aktualisieren des Timestamps von "cmTC_d3911.dir\Debug\cmTC_d3911.tlog\cmTC_d3911.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_d3911.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_14ece.dir\Debug\cmTC_14ece.tlog\unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_14ece.dir\Debug\cmTC_14ece.tlog\cmTC_14ece.lastbuildstate".
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_14ece.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:01.00
+Verstrichene Zeit 00:00:00.98
 
 
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: c:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp
+Change Dir: c:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_f17bd.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_a21a9.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 für .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:19 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_f17bd.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:25 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_a21a9.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_f17bd.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
-  Das Verzeichnis "cmTC_f17bd.dir\Debug\cmTC_f17bd.tlog\" wird erstellt.
+  Das Verzeichnis "cmTC_a21a9.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_a21a9.dir\Debug\cmTC_a21a9.tlog\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_f17bd.dir\Debug\cmTC_f17bd.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_a21a9.dir\Debug\cmTC_a21a9.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f17bd.dir\Debug\\" /Fd"cmTC_f17bd.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\feature_tests.c"
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a21a9.dir\Debug\\" /Fd"cmTC_a21a9.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\feature_tests.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26131.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f17bd.dir\Debug\\" /Fd"cmTC_f17bd.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\feature_tests.c"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a21a9.dir\Debug\\" /Fd"cmTC_a21a9.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\feature_tests.c"
   feature_tests.c
   
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_f17bd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_f17bd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_f17bd.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_f17bd.dir\Debug\feature_tests.obj
-  cmTC_f17bd.vcxproj -> C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_f17bd.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_a21a9.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_a21a9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_a21a9.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_a21a9.dir\Debug\feature_tests.obj
+  cmTC_a21a9.vcxproj -> C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_a21a9.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_f17bd.dir\Debug\cmTC_f17bd.tlog\unsuccessfulbuild" wird gelöscht.
-  Aktualisieren des Timestamps von "cmTC_f17bd.dir\Debug\cmTC_f17bd.tlog\cmTC_f17bd.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_f17bd.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_a21a9.dir\Debug\cmTC_a21a9.tlog\unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_a21a9.dir\Debug\cmTC_a21a9.tlog\cmTC_a21a9.lastbuildstate".
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_a21a9.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.96
+Verstrichene Zeit 00:00:01.40
 
 
     Feature record: C_FEATURE:1c_function_prototypes
     Feature record: C_FEATURE:1c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: c:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp
+Change Dir: c:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_aacf1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_8f1e3.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 für .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:20 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_aacf1.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:27 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_8f1e3.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_aacf1.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
-  Das Verzeichnis "cmTC_aacf1.dir\Debug\cmTC_aacf1.tlog\" wird erstellt.
+  Das Verzeichnis "cmTC_8f1e3.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_8f1e3.dir\Debug\cmTC_8f1e3.tlog\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_aacf1.dir\Debug\cmTC_aacf1.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_8f1e3.dir\Debug\cmTC_8f1e3.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_aacf1.dir\Debug\\" /Fd"cmTC_aacf1.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8f1e3.dir\Debug\\" /Fd"cmTC_8f1e3.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26131.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_aacf1.dir\Debug\\" /Fd"cmTC_aacf1.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_8f1e3.dir\Debug\\" /Fd"cmTC_8f1e3.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   testCXXCompiler.cxx
   
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_aacf1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_aacf1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_aacf1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_aacf1.dir\Debug\testCXXCompiler.obj
-  cmTC_aacf1.vcxproj -> C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_aacf1.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_8f1e3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_8f1e3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_8f1e3.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_8f1e3.dir\Debug\testCXXCompiler.obj
+  cmTC_8f1e3.vcxproj -> C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_8f1e3.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_aacf1.dir\Debug\cmTC_aacf1.tlog\unsuccessfulbuild" wird gelöscht.
-  Aktualisieren des Timestamps von "cmTC_aacf1.dir\Debug\cmTC_aacf1.tlog\cmTC_aacf1.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_aacf1.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_8f1e3.dir\Debug\cmTC_8f1e3.tlog\unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_8f1e3.dir\Debug\cmTC_8f1e3.tlog\cmTC_8f1e3.lastbuildstate".
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_8f1e3.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.89
+Verstrichene Zeit 00:00:00.85
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: c:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp
+Change Dir: c:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_18407.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_db840.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 für .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:21 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_18407.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:28 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_db840.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_18407.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
-  Das Verzeichnis "cmTC_18407.dir\Debug\cmTC_18407.tlog\" wird erstellt.
+  Das Verzeichnis "cmTC_db840.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_db840.dir\Debug\cmTC_db840.tlog\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_18407.dir\Debug\cmTC_18407.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_db840.dir\Debug\cmTC_db840.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_18407.dir\Debug\\" /Fd"cmTC_18407.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_db840.dir\Debug\\" /Fd"cmTC_db840.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26131.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_18407.dir\Debug\\" /Fd"cmTC_18407.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_db840.dir\Debug\\" /Fd"cmTC_db840.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
   CMakeCXXCompilerABI.cpp
   
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_18407.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_18407.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_18407.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_18407.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_18407.vcxproj -> C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_18407.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_db840.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_db840.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_db840.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_db840.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_db840.vcxproj -> C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_db840.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_18407.dir\Debug\cmTC_18407.tlog\unsuccessfulbuild" wird gelöscht.
-  Aktualisieren des Timestamps von "cmTC_18407.dir\Debug\cmTC_18407.tlog\cmTC_18407.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_18407.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_db840.dir\Debug\cmTC_db840.tlog\unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_db840.dir\Debug\cmTC_db840.tlog\cmTC_db840.lastbuildstate".
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_db840.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:00.93
+Verstrichene Zeit 00:00:00.85
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: c:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp
+Change Dir: c:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_462e8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_fe125.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
 Microsoft (R)-Buildmodul, Version 15.6.85.37198 für .NET Framework
 Copyright (C) Microsoft Corporation. Alle Rechte vorbehalten.
 
-Der Buildvorgang wurde am 07.01.2019 14:56:22 gestartet.
-Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_462e8.vcxproj" auf Knoten "1" (Standardziele).
+Der Buildvorgang wurde am 29.01.2019 02:52:29 gestartet.
+Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_fe125.vcxproj" auf Knoten "1" (Standardziele).
 PrepareForBuild:
-  Das Verzeichnis "cmTC_462e8.dir\Debug\" wird erstellt.
-  Das Verzeichnis "C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
-  Das Verzeichnis "cmTC_462e8.dir\Debug\cmTC_462e8.tlog\" wird erstellt.
+  Das Verzeichnis "cmTC_fe125.dir\Debug\" wird erstellt.
+  Das Verzeichnis "C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\" wird erstellt.
+  Das Verzeichnis "cmTC_fe125.dir\Debug\cmTC_fe125.tlog\" wird erstellt.
 InitializeBuildStatus:
-  "cmTC_462e8.dir\Debug\cmTC_462e8.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+  "cmTC_fe125.dir\Debug\cmTC_fe125.tlog\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_462e8.dir\Debug\\" /Fd"cmTC_462e8.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\feature_tests.cxx"
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe125.dir\Debug\\" /Fd"cmTC_fe125.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\feature_tests.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.13.26131.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_462e8.dir\Debug\\" /Fd"cmTC_462e8.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\VSC Projects\Solar System\build\CMakeFiles\feature_tests.cxx"
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fe125.dir\Debug\\" /Fd"cmTC_fe125.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Repositories\Solar-System\build\CMakeFiles\feature_tests.cxx"
   feature_tests.cxx
   
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_462e8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_462e8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/VSC Projects/Solar System/build/CMakeFiles/CMakeTmp/Debug/cmTC_462e8.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_462e8.dir\Debug\feature_tests.obj
-  cmTC_462e8.vcxproj -> C:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\Debug\cmTC_462e8.exe
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_fe125.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_fe125.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Repositories/Solar-System/build/CMakeFiles/CMakeTmp/Debug/cmTC_fe125.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_fe125.dir\Debug\feature_tests.obj
+  cmTC_fe125.vcxproj -> C:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\Debug\cmTC_fe125.exe
 FinalizeBuildStatus:
-  Die Datei "cmTC_462e8.dir\Debug\cmTC_462e8.tlog\unsuccessfulbuild" wird gelöscht.
-  Aktualisieren des Timestamps von "cmTC_462e8.dir\Debug\cmTC_462e8.tlog\cmTC_462e8.lastbuildstate".
-Die Erstellung von Projekt "c:\VSC Projects\Solar System\build\CMakeFiles\CMakeTmp\cmTC_462e8.vcxproj" ist abgeschlossen (Standardziele).
+  Die Datei "cmTC_fe125.dir\Debug\cmTC_fe125.tlog\unsuccessfulbuild" wird gelöscht.
+  Aktualisieren des Timestamps von "cmTC_fe125.dir\Debug\cmTC_fe125.tlog\cmTC_fe125.lastbuildstate".
+Die Erstellung von Projekt "c:\Repositories\Solar-System\build\CMakeFiles\CMakeTmp\cmTC_fe125.vcxproj" ist abgeschlossen (Standardziele).
 
 Der Buildvorgang wurde erfolgreich ausgeführt.
     0 Warnung(en)
     0 Fehler
 
-Verstrichene Zeit 00:00:01.25
+Verstrichene Zeit 00:00:00.83
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers

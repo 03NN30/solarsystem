@@ -1,4 +1,4 @@
-# Install script for directory: C:/VSC Projects/Solar System
+# Install script for directory: C:/Repositories/Solar-System
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

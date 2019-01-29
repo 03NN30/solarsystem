@@ -1,141 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\VSC Projects\Solar System\application\source\main.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\application\source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\framework\source\camera.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\framework\source\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\framework\source\model.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\framework\source\model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\framework\source\shader.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\framework\source\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\framework\source\texture.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\framework\source\texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\framework\source\skybox.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\framework\source\skybox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\framework\source\controls.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\framework\source\controls.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\framework\source\framebuffer.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\framework\source\framebuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\application\source\application.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\application\source\application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\application\source\node.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\application\source\node.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\application\source\render.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\application\source\render.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\application\source\sceneGraph.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\application\source\sceneGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\application\source\gui.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\application\source\gui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\external\IMGUI\imgui.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\external\IMGUI\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_demo.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\external\IMGUI\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_draw.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\external\IMGUI\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_impl_opengl3.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\external\IMGUI\imgui_impl_opengl3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_impl_sdl.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\external\IMGUI\imgui_impl_sdl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_widgets.cpp">
+    <ClCompile Include="C:\Repositories\Solar-System\external\IMGUI\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\glewInc.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\glewInc.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\camera.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\camera.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\model.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\model.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\shader.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\shader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\texture.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\texture.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\skybox.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\skybox.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\controls.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\controls.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\framework\include\framebuffer.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\framebuffer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\application\include\application.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\application.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\application\include\utils.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\utils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\application\include\node.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\node.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\application\include\render.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\render.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\application\include\sceneGraph.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\sceneGraph.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\application\include\gui.hpp">
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\gui.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imconfig.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imgui.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imgui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_impl_opengl3.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imgui_impl_opengl3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_impl_sdl.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imgui_impl_sdl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imgui_internal.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imgui_internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imstb_rectpack.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imstb_rectpack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imstb_textedit.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imstb_textedit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\VSC Projects\Solar System\external\IMGUI\imstb_truetype.h">
+    <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imstb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\VSC Projects\Solar System\CMakeLists.txt" />
+    <CustomBuild Include="C:\Repositories\Solar-System\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{794D1720-64E2-3A8A-AB16-E1AB2C76724A}</UniqueIdentifier>
+      <UniqueIdentifier>{E74E748A-9A59-353E-B2B5-A3CD9380B765}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{D06AA479-2386-3E1D-B557-C933393DD62F}</UniqueIdentifier>
+      <UniqueIdentifier>{89CE2FF4-D584-332B-8B43-94C378DAFE4E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

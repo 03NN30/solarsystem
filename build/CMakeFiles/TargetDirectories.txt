@@ -1,3 +1,3 @@
-C:/VSC Projects/Solar System/build/CMakeFiles/SolarSystem.dir
-C:/VSC Projects/Solar System/build/CMakeFiles/ALL_BUILD.dir
-C:/VSC Projects/Solar System/build/CMakeFiles/ZERO_CHECK.dir
+C:/Repositories/Solar-System/build/CMakeFiles/SolarSystem.dir
+C:/Repositories/Solar-System/build/CMakeFiles/ALL_BUILD.dir
+C:/Repositories/Solar-System/build/CMakeFiles/ZERO_CHECK.dir

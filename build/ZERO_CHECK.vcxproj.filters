@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\VSC Projects\Solar System\build\CMakeFiles\2e608cbdeef8b0a9e1561c8fd6d73d68\generate.stamp.rule">
+    <CustomBuild Include="C:\Repositories\Solar-System\build\CMakeFiles\e885fbf940b660e177bcf68b4c70709e\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{FE0BC63A-A805-35F7-B111-E71C66A06626}</UniqueIdentifier>
+      <UniqueIdentifier>{9371774C-8EF9-38D6-970D-BDC5DFBD34D3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
