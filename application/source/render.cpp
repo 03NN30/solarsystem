@@ -127,6 +127,7 @@ void setupFramebuffer() {
 }
 
 void setup() {
+    // parse and compile shaders
     sunShader.createShader();
     planetShader.createShader();
     orbitShader.createShader();
@@ -138,41 +139,27 @@ void setup() {
     bloomShader.createShader();
     sunBloomShader.createShader();
     asteroidShader.createShader();
-    
+    // setting geometries
     sphere.setGeometry(GL_TRIANGLES); 
     cube.setGeometry(GL_TRIANGLES); 
     quad.setGeometry(GL_TRIANGLES);
     asteroid.setGeometry(GL_TRIANGLES);
-
+    // initializing scene graph
     sg->setName("root");
-
-    Node* sun     = new Node("sun",      0.0f,   0.0f, 1.0f, 0.5f, "planets/2k_sun.jpg");              
-    Node* mercury = new Node("mercury",  3.0f,  0.06f, 0.2f, 1.0f, "planets/2k_mercury.jpg");   
-    Node* venus   = new Node("venus",    6.0f,  0.05f, 0.2f, 1.0f, "planets/2k_venus.jpg");         
-    Node* earth   = new Node("earth",    9.0f, 0.038f, 0.3f, 2.4f, "planets/2k_earth.jpg,planets/2k_earth_clouds.jpg,planets/2k_earth_nightmap.jpg");      
-    Node* mars    = new Node("mars",    12.0f, 0.029f, 0.1f, 1.0f, "planets/2k_mars.jpg");          
-    Node* jupiter = new Node("jupiter", 15.0f, 0.022f, 0.7f, 1.0f, "planets/2k_jupiter.jpg");       
-    Node* saturn  = new Node("saturn",  18.0f, 0.034f, 0.6f, 1.0f, "planets/2k_saturn.jpg");        
-    Node* uranus  = new Node("uranus",  21.0f, 0.026f, 0.4f, 1.0f, "planets/2k_uranus.jpg");        
-    Node* neptune = new Node("neptune", 24.0f, 0.028f, 0.4f, 1.0f, "planets/2k_neptune.jpg");       
-    Node* pluto   = new Node("pluto",   27.0f, 0.031f, 0.1f, 1.0f, "planets/plutomap.png");         
-    Node* moon    = new Node("moon",     2.0f,   1.0f, 0.1f, 2.0f, "planets/2k_moon.jpg");   
+    sg->addChild(new Node("sun",      0.0f,   0.0f, 1.0f, 0.5f, "planets/2k_sun.jpg"));
+    sg->addChild(new Node("mercury",  3.0f,  0.06f, 0.2f, 1.0f, "planets/2k_mercury.jpg"));
+    sg->addChild(new Node("venus",    6.0f,  0.05f, 0.2f, 1.0f, "planets/2k_venus.jpg"));         
+    sg->addChild(new Node("earth",    9.0f, 0.038f, 0.3f, 2.4f, "planets/2k_earth.jpg,planets/2k_earth_clouds.jpg,planets/2k_earth_nightmap.jpg"));   
+    sg->addChild(new Node("mars",    12.0f, 0.029f, 0.1f, 1.0f, "planets/2k_mars.jpg"));
+    sg->addChild(new Node("jupiter", 15.0f, 0.022f, 0.7f, 1.0f, "planets/2k_jupiter.jpg"));
+    sg->addChild(new Node("saturn",  18.0f, 0.034f, 0.6f, 1.0f, "planets/2k_saturn.jpg"));
+    sg->addChild(new Node("uranus",  21.0f, 0.026f, 0.4f, 1.0f, "planets/2k_uranus.jpg"));
+    sg->addChild(new Node("neptune", 24.0f, 0.028f, 0.4f, 1.0f, "planets/2k_neptune.jpg"));
+    sg->addChild(new Node("pluto",   27.0f, 0.031f, 0.1f, 1.0f, "planets/plutomap.png"));
+    sg->getChild("earth")->addChild(new Node("moon",     2.0f,   1.0f, 0.1f, 2.0f, "planets/2k_moon.jpg"));
     
-    sun->setName("sun");            sg->addChild(sun);                      
-    mercury->setName("mercury");    sg->addChild(mercury);                  
-    venus->setName("venus");        sg->addChild(venus);                    
-    earth->setName("earth");        sg->addChild(earth);                    
-    mars->setName("mars");          sg->addChild(mars);                     
-    jupiter->setName("jupiter");    sg->addChild(jupiter);                  
-    saturn->setName("saturn");      sg->addChild(saturn);                   
-    uranus->setName("uranus");      sg->addChild(uranus);                   
-    neptune->setName("neptune");    sg->addChild(neptune);                  
-    pluto->setName("pluto");        sg->addChild(pluto);                    
-    moon->setName("moon");          sg->getChild("earth")->addChild(moon);  
-
     skybox.setPaths("milkyway/XP.jpg", "milkyway/XN.jpg", "milkyway/YP.jpg", "milkyway/YN.jpg", "milkyway/ZP.jpg", "milkyway/ZN.jpg");
 
-    initializeSkybox();
     initializeOrbits();
     initializeStars(10000);
     initializeAsteroids();
@@ -186,13 +173,12 @@ void update() {
 }
 
 void render() {
- 
     glEnable(GL_DEPTH_TEST);
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);   
 
-    glBindFramebuffer(GL_FRAMEBUFFER, hdrFBO);
-    //Framebuffer::get().bind();
+    glBindFramebuffer(GL_FRAMEBUFFER, hdrFBO); //Framebuffer::get().bind();
+    {    
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         if (stars) {
@@ -206,15 +192,13 @@ void render() {
         glDepthFunc(GL_LEQUAL);
         drawSkybox();  
         glDepthFunc(GL_LESS); 
-
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    //Framebuffer::get().unbind(); 
+    }
+    glBindFramebuffer(GL_FRAMEBUFFER, 0); //Framebuffer::get().unbind(); 
 
     drawFramebuffer(); 
 }
 
 void recursRender(Node& it, glm::fmat4& mat) {    
-
     if (it.getVisibility()) {
         if (it.getName() != sg->getName()) {
             it.setWorldTransform(mat);
@@ -324,63 +308,6 @@ void initializeOrbits() {
 
     orbitModel.draw_mode = GL_LINE_LOOP;
     orbitModel.num_elements = GLsizei(orbitVec.size() / 2);
-}
-
-void initializeSkybox() {
-    float skyboxVertices[] = {        
-        -1.0f,  1.0f, -1.0f,
-        -1.0f, -1.0f, -1.0f,
-         1.0f, -1.0f, -1.0f,
-         1.0f, -1.0f, -1.0f,
-         1.0f,  1.0f, -1.0f,
-        -1.0f,  1.0f, -1.0f,
-
-        -1.0f, -1.0f,  1.0f,
-        -1.0f, -1.0f, -1.0f,
-        -1.0f,  1.0f, -1.0f,
-        -1.0f,  1.0f, -1.0f,
-        -1.0f,  1.0f,  1.0f,
-        -1.0f, -1.0f,  1.0f,
-
-         1.0f, -1.0f, -1.0f,
-         1.0f, -1.0f,  1.0f,
-         1.0f,  1.0f,  1.0f,
-         1.0f,  1.0f,  1.0f,
-         1.0f,  1.0f, -1.0f,
-         1.0f, -1.0f, -1.0f,
-
-        -1.0f, -1.0f,  1.0f,
-        -1.0f,  1.0f,  1.0f,
-         1.0f,  1.0f,  1.0f,
-         1.0f,  1.0f,  1.0f,
-         1.0f, -1.0f,  1.0f,
-        -1.0f, -1.0f,  1.0f,
-
-        -1.0f,  1.0f, -1.0f,
-         1.0f,  1.0f, -1.0f,
-         1.0f,  1.0f,  1.0f,
-         1.0f,  1.0f,  1.0f,
-        -1.0f,  1.0f,  1.0f,
-        -1.0f,  1.0f, -1.0f,
-
-        -1.0f, -1.0f, -1.0f,
-        -1.0f, -1.0f,  1.0f,
-         1.0f, -1.0f, -1.0f,
-         1.0f, -1.0f, -1.0f,
-        -1.0f, -1.0f,  1.0f,
-         1.0f, -1.0f,  1.0f
-    };
-
-    glGenVertexArrays(1, &skyboxModel.VAO);
-    glGenBuffers(1, &skyboxModel.VBO);
-    glBindVertexArray(skyboxModel.VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, skyboxModel.VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-
-    skyboxModel.draw_mode = GL_TRIANGLES;
-    skyboxModel.num_elements = GLsizei(36);
 }
 
 void drawFramebuffer() {
@@ -609,12 +536,11 @@ void drawSkybox() {
 
     glm::fmat4 model_matrix = glm::fmat4(1.0f);
     model_matrix = glm::translate(model_matrix, Camera::get().position);
-    model_matrix = glm::scale(model_matrix, glm::vec3(60.0f, 60.0f, 60.0f));
+    model_matrix = glm::scale(model_matrix, glm::vec3(100.0f, 100.0f, 100.0f));
     skyboxShader.setModel(model_matrix);
 
-    glBindVertexArray(skyboxModel.VAO);
-    glDrawArrays(skyboxModel.draw_mode, 0, skyboxModel.num_elements);
-    glBindVertexArray(0);
+    cube.setVertexAttributes();
+    cube.draw();
 }
 
 void uploadView() {

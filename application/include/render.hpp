@@ -11,10 +11,12 @@
 #include "framebuffer.hpp"
 
 void setup();
-void render();
 void update();
+void render();
+void recursRender(Node& it, glm::fmat4 &mat = glm::fmat4(1.0f));
 
 void renderQuad();
+
 void drawFramebuffer();
 void drawQuad();
 void drawAsteroid();
@@ -24,11 +26,11 @@ void drawEarth(Node& it);
 void drawOrbit(Node& it, glm::fmat4& mat);
 void drawStars();
 void drawSkybox();
-void recursRender(Node& it, glm::fmat4 &mat = glm::fmat4(1.0f));
+
 void initializeOrbits();
 void initializeStars(unsigned int amount);
-void initializeSkybox();
 void initializeAsteroids();
+
 void uploadView();
 void uploadProjection();
 
