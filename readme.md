@@ -1,4 +1,5 @@
-# Solar System v0.4
+# Solar System 
+v0.4
 
 using:
 - SDL2.0
