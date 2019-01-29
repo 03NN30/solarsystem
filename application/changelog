@@ -1,0 +1,50 @@
+to do (difficulties):
+
+***
+- fix performance
+- outline of planets when hovering over them with mouse, click will activate follower cam and show interesting information
+- left click on planets will show information about their distance from the sun, speed, min-max temperature
+- add ring to corresponding planets
+- add asteroid circle 
+**
+- no stars inside solarsystem
+- increase render distance
+- real distances
+*
+- add other moons
+- move transformation functions inside of update
+- move gui inside of update
+
+bugs:
+- minimizing GUI while in follower mode, will stop follower mode and GUI can't be reactivated 
+- bloom doesn't work while mirroring
+- sun bloom shows through planets
+
+changelog:
+v0.1
+- SDL2 support
+- moving planets + sun
+- orbits for planets
+- blinn phong shading added
+- added static stars
+v0.2
+- fixed start up in non fullscreen mode for custom resolutions
+- tweaked orbit color
+- implemented fps counter in non fullscreen mode
+- fixed scene graph ( now on heap )
+- added gui
+- multiple texture support 
+- added skybox
+v0.3
+- added welcome screen
+- remade GUI
+- improved controls
+- added options to follow planets
+- added support for outline drawing
+- improved shaders ( featuring light attenuation and proper specular highlights )
+- added framebuffer & screen quad
+- added post processing effects
+- added hdr, tone mapping and gamma
+- new GUI sliders & check boxes
+v0.4
+- added bloom effect

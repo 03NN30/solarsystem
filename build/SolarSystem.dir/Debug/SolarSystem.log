@@ -1,0 +1,4 @@
+﻿main.obj : error LNK2001: unresolved external symbol __RTC_InitBase
+main.obj : error LNK2001: unresolved external symbol __RTC_Shutdown
+LINK : error LNK2001: unresolved external symbol _mainCRTStartup
+C:\VSC Projects\test\build\Debug\SolarSystem.exe : fatal error LNK1120: 3 unresolved externals
