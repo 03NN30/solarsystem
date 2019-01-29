@@ -23,6 +23,10 @@ include_directories(external/IMGUI)
 include_directories(framework/include)
 include_directories(application/include)
 
+# assimp
+# include_directories(external/assimp)
+# link_directories(external/libs)
+
 # set header files
 set(HEADERS ${HEADERS}
     framework/include/glewInc.hpp
@@ -74,4 +78,5 @@ target_link_libraries(SolarSystem
     SDL2_image
     ${OPENGL_LIBRARIES}
     glew32s
+    #assimp
 )

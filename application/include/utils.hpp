@@ -10,7 +10,7 @@ const float appVersion = 0.3f;
 const bool fullScreen = false;
 const int screenWidth = 1800;
 const int screenHeight = 960;
-const std::string resource_path = "C:/VSC Projects/Solar System/resources/";
+const std::string resource_path = "C:/Repositories/Solar-System/resources/";
 
 extern bool isMoving;
 extern bool orbits;

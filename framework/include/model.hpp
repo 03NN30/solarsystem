@@ -34,7 +34,7 @@ public:
 
     void toString();
     modelObject &getModelObject();
-    void parseObj(const std::string &path);
+    void parseObj(const std::string path);
     void splitF(const std::string& str);
     void sort();
     void setGeometry(GLenum draw_mode);
@@ -51,6 +51,8 @@ private:
     std::vector<int> vertexIndex;
     std::vector<int> textureIndex;
     std::vector<int> normalIndex;
+
+    std::string file_path;
 
     bool gotPosition = false;
     bool gotNormal = false;

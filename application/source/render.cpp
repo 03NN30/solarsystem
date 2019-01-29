@@ -3,6 +3,8 @@
 #include "sceneGraph.hpp"
 #include "gui.hpp"
 
+#include <SDL.h>
+
 #include <imgui.h>
 #include <imgui_impl_sdl.h>
 #include <imgui_impl_opengl3.h>
@@ -23,7 +25,9 @@ Shader quadShader("quad");
 Shader blurShader("blur");
 Shader bloomShader("bloom");
 Shader sunBloomShader("sunBloom");
+Shader asteroidShader("basic");
 
+Model asteroid("rock.obj");
 Model sphere("sphere.obj");
 Model cube("skybox.obj");
 Model quad("quad.obj");
@@ -63,6 +67,9 @@ unsigned int pingpongColorbuffers[2];
 unsigned int attachments[2] = { GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1 };
 unsigned int rboDepth;
 
+Texture asteroidTexture("rock.jpg");
+unsigned int amount = 1000;
+glm::mat4* modelMatrices;
 
 void setupFramebuffer() {
     
@@ -130,10 +137,12 @@ void setup() {
     blurShader.createShader();
     bloomShader.createShader();
     sunBloomShader.createShader();
+    asteroidShader.createShader();
     
     sphere.setGeometry(GL_TRIANGLES); 
     cube.setGeometry(GL_TRIANGLES); 
     quad.setGeometry(GL_TRIANGLES);
+    asteroid.setGeometry(GL_TRIANGLES);
 
     sg->setName("root");
 
@@ -166,7 +175,7 @@ void setup() {
     initializeSkybox();
     initializeOrbits();
     initializeStars(10000);
-
+    initializeAsteroids();
     setupFramebuffer();
     //Framebuffer::get();
 }
@@ -190,11 +199,14 @@ void render() {
             drawStars();   
         }
 
+        drawAsteroid();
+
         recursRender(*sg);
 
         glDepthFunc(GL_LEQUAL);
         drawSkybox();  
-        glDepthFunc(GL_LESS);  
+        glDepthFunc(GL_LESS); 
+
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
     //Framebuffer::get().unbind(); 
 
@@ -228,6 +240,39 @@ void recursRender(Node& it, glm::fmat4& mat) {
                 recursRender(*itChild, it.getWorldTransform());
             }
         }
+    }
+}
+
+void initializeAsteroids() {
+    asteroidTexture.setTexturePath("rock.jpg");
+    asteroidTexture.set2DTexture(GL_REPEAT, GL_LINEAR);
+
+    modelMatrices = new glm::mat4[amount];
+    srand(SDL_GetTicks()); // initialize random seed	
+    float radius = 40.0;
+    float offset = 2.5f;
+    for (unsigned int i = 0; i < amount; i++) {
+        glm::mat4 model = glm::mat4(1.0f);
+        // 1. translation: displace along circle with 'radius' in range [-offset, offset]
+        float angle = (float)i / (float)amount * 360.0f;
+        float displacement = (rand() % (int)(2 * offset * 100)) / 100.0f - offset;
+        float x = sin(angle) * radius + displacement;
+        displacement = (rand() % (int)(2 * offset * 100)) / 100.0f - offset;
+        float y = displacement * 0.4f; // keep height of asteroid field smaller compared to width of x and z
+        displacement = (rand() % (int)(2 * offset * 100)) / 100.0f - offset;
+        float z = cos(angle) * radius + displacement;
+        model = glm::translate(model, glm::vec3(x, y, z));
+
+        // 2. scale: Scale between 0.05 and 0.25f
+        float scale = (rand() % 20) / 100.0f + 0.05;
+        model = glm::scale(model, glm::vec3(scale));
+
+        // 3. rotation: add random rotation around a (semi)randomly picked rotation axis vector
+        float rotAngle = (rand() % 360);
+        model = glm::rotate(model, rotAngle, glm::vec3(0.4f, 0.6f, 0.8f));
+
+        // 4. now add to list of matrices
+        modelMatrices[i] = model;
     }
 }
 
@@ -467,6 +512,22 @@ void drawPlanet(Node& it) {
     sphere.draw();    
 }
 
+void drawAsteroid() {
+    for (unsigned int i = 0; i < amount; i++)
+    {
+        asteroidShader.use();
+
+        asteroidShader.setInt("texture1", 0);
+        glActiveTexture(GL_TEXTURE0);
+        asteroidTexture.bind();
+    
+        asteroidShader.setModel(modelMatrices[i]);
+
+        asteroid.setVertexAttributes();
+        asteroid.draw(); 
+    }    
+}
+
 void drawEarth(Node& it) {
     earthShader.use();
     
@@ -565,6 +626,7 @@ void uploadView() {
     skyboxShader.setView(view);
     orbitShader.setView(view);
     sunBloomShader.setView(view);
+    asteroidShader.setView(view);
 }
 
 void uploadProjection() {
@@ -576,6 +638,7 @@ void uploadProjection() {
     skyboxShader.setProjection(projection);
     orbitShader.setProjection(projection);
     sunBloomShader.setProjection(projection);
+    asteroidShader.setProjection(projection);
 }
 
 

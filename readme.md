@@ -7,4 +7,4 @@ using:
 - ImGui
 - GLM
 
-![Sample Img](https://i.gyazo.com/f30458f7d771e70888dc3bff2d844b49.jpg)
+![Sample Img](https://i.gyazo.com/f9069bfd332818769fcd65f452e3d8be.jpg)

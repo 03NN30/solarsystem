@@ -59,7 +59,7 @@ void Model::splitF(const std::string& str) {
 }
 
 void Model::sort() {
-    if (gotPosition && gotTexture && gotNormal && gotNormal) {
+    if (gotPosition && gotTexture && gotNormal && gotIndex) {
         for (unsigned int i = 0; i < vertexIndex.size(); i++) {
             unsigned int vertIndex = vertexIndex[i];
             unsigned int texIndex = textureIndex[i];
@@ -79,6 +79,7 @@ void Model::sort() {
 }
 
 Model::Model(const std::string &path) {
+    file_path = path;
     unsigned int found = path.find(".");
     if (found!=std::string::npos) {
         if (path.substr(found) == ".obj") {
@@ -94,67 +95,73 @@ Model::Model(unsigned short amount) {
     vertexAttribs = amount;
 }
 
-void Model::parseObj(const std::string &path) {
-    std::ifstream stream(path);
-	std::string line;
-    
-	while (getline(stream, line)) {
-        // vertex coords
-	  	if (line[0] == 'v' && line[1] == ' ') { 
-            gotPosition = true;
-            vertexInfo v = split(line.substr(1));
-            glm::vec3 temp;
-            temp.x = v.x;
-            temp.y = v.y;
-            temp.z = v.z;
-            vertexPos.push_back(temp);
-	  	}
-        // normal coords
-        else if (line[0] == 'v' && line[1] == 'n') {
-            gotNormal = true;
-            vertexInfo vn = split(line.substr(2));
-            glm::vec3 temp;
-            temp.x = vn.x;
-            temp.y = vn.y;
-            temp.z = vn.z;
-            normalPos.push_back(temp);
-            
-        }
-        // tex coords
-        else if (line[0] == 'v' && line[1] == 't') {
-            gotTexture = true;
-            vertexInfo vt = split(line.substr(2));
-            glm::vec3 temp;
-            temp.x = vt.x;
-            temp.y = vt.y;
-            texturePos.push_back(temp);
-        } 
-        // indices
-        else if (line[0] == 'f' && line[1] == ' ') {
-            gotIndex = true;
-            // split by " "
-            std::istringstream iss(line.substr(1));
-            std::vector<std::string> temp;
+void Model::parseObj(const std::string path) {
+    std::ifstream myfile(path);
+	std::string line = "";
+    if (myfile.is_open()) {
+	    while (getline(myfile, line)) {
+            // vertex coords
+	      	if (line[0] == 'v' && line[1] == ' ') { 
+                gotPosition = true;
+                vertexInfo v = split(line.substr(1));
+                glm::vec3 temp;
+                temp.x = v.x;
+                temp.y = v.y;
+                temp.z = v.z;
+                vertexPos.push_back(temp);
+	      	}
+            // normal coords
+            else if (line[0] == 'v' && line[1] == 'n') {
+                gotNormal = true;
+                vertexInfo vn = split(line.substr(2));
+                glm::vec3 temp;
+                temp.x = vn.x;
+                temp.y = vn.y;
+                temp.z = vn.z;
+                normalPos.push_back(temp);
 
-            do {
-                std::string subs;
-                iss >> subs;
-                temp.push_back(subs);
-            } while (iss);
-
-            for (auto& it : temp) {
-                splitF(it);
             }
-        }		
+            // tex coords
+            else if (line[0] == 'v' && line[1] == 't') {
+                gotTexture = true;
+                vertexInfo vt = split(line.substr(2));
+                glm::vec3 temp;
+                temp.x = vt.x;
+                temp.y = vt.y;
+                texturePos.push_back(temp);
+            } 
+            // indices
+            else if (line[0] == 'f' && line[1] == ' ') {
+                gotIndex = true;
+                // split by " "
+                std::istringstream iss(line.substr(1));
+                std::vector<std::string> temp;
+
+                do {
+                    std::string subs;
+                    iss >> subs;
+                    temp.push_back(subs);
+                } while (iss);
+
+                for (auto& it : temp) {
+                    splitF(it);
+                }
+            }		
+        }
+    } else {
+        myfile.close();
+        std::cerr << "ERROR::MODEL_LOADER::CANT OPEN FILE:\n" << path << std::endl; 
+        throw std::exception();
     }
+    myfile.close();
     sort();
 }
 
 void Model::setGeometry(GLenum draw_mode) {
     glGenVertexArrays(1, &model_object.VAO);
     glBindVertexArray(model_object.VAO);
-
-    if (gotPosition && gotTexture && gotNormal && gotNormal) {
+     
+    if (gotPosition && gotTexture && gotNormal && gotIndex) {
         glGenBuffers(1, &model_object.VBO);
 	    glBindBuffer(GL_ARRAY_BUFFER, model_object.VBO);
         glBufferData(GL_ARRAY_BUFFER, out_vertices.size() * sizeof(glm::vec3), &out_vertices[0], GL_STATIC_DRAW);
