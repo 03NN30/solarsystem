@@ -34,6 +34,8 @@ extern  bool blur;
 extern  bool grayscale;
 extern  bool verticalMirror;
 extern  bool horizontalMirror;
+extern  bool bloomFlag;
+extern  bool planetBloom;
 
 extern Node* sg;
 

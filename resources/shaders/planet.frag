@@ -10,6 +10,7 @@ uniform float Shininess;
 uniform float Reflectivity;
 uniform float AmbientVal;
 uniform bool outline;
+uniform bool planetBloom;
 uniform sampler2D texture1;
 
 in vec3 fragPos;
@@ -46,7 +47,13 @@ void main() {
         ambient  *= attenuation;
         diffuse  *= attenuation;
         specular *= attenuation;
-
-        out_Color = vec4(ambient + diffuse + specular, 1.0);
+        vec3 result = ambient + diffuse + specular;
+        
+        if (planetBloom) {
+            out_Color = vec4(result, 1.0);
+        } else {
+            vec3 normResult = normalize(result);
+            out_Color = vec4(normResult, 1.0);
+        }
     }
 }

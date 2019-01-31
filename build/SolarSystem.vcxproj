@@ -112,7 +112,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_image.lib;opengl32.lib;glu32.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32;C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32/$(Configuration);C:/Repositories/Solar-System/external/SDL/lib/x86;C:/Repositories/Solar-System/external/SDL/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/libs;C:/Repositories/Solar-System/external/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -155,7 +155,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_image.lib;opengl32.lib;glu32.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32;C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32/$(Configuration);C:/Repositories/Solar-System/external/SDL/lib/x86;C:/Repositories/Solar-System/external/SDL/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/libs;C:/Repositories/Solar-System/external/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -198,7 +198,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_image.lib;opengl32.lib;glu32.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32;C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32/$(Configuration);C:/Repositories/Solar-System/external/SDL/lib/x86;C:/Repositories/Solar-System/external/SDL/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/libs;C:/Repositories/Solar-System/external/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -240,7 +240,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>SDL2main.lib;SDL2.lib;SDL2_image.lib;opengl32.lib;glu32.lib;glew32s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32;C:/Repositories/Solar-System/external/GLEW/lib/Release/Win32/$(Configuration);C:/Repositories/Solar-System/external/SDL/lib/x86;C:/Repositories/Solar-System/external/SDL/lib/x86/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:/Repositories/Solar-System/external/libs;C:/Repositories/Solar-System/external/libs/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -322,20 +322,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Repositories\Solar-System\application\source\render.cpp" />
     <ClCompile Include="C:\Repositories\Solar-System\application\source\sceneGraph.cpp" />
     <ClCompile Include="C:\Repositories\Solar-System\application\source\gui.cpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\glewInc.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\camera.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\model.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\shader.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\texture.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\skybox.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\controls.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\framework\include\framebuffer.hpp" />
     <ClInclude Include="C:\Repositories\Solar-System\application\include\application.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\application\include\utils.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\gui.hpp" />
     <ClInclude Include="C:\Repositories\Solar-System\application\include\node.hpp" />
     <ClInclude Include="C:\Repositories\Solar-System\application\include\render.hpp" />
     <ClInclude Include="C:\Repositories\Solar-System\application\include\sceneGraph.hpp" />
-    <ClInclude Include="C:\Repositories\Solar-System\application\include\gui.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\application\include\utils.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\camera.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\controls.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\framebuffer.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\glewInc.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\model.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\shader.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\skybox.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\stb_image.hpp" />
+    <ClInclude Include="C:\Repositories\Solar-System\framework\include\texture.hpp" />
     <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imconfig.h" />
     <ClCompile Include="C:\Repositories\Solar-System\external\IMGUI\imgui.cpp" />
     <ClInclude Include="C:\Repositories\Solar-System\external\IMGUI\imgui.h" />

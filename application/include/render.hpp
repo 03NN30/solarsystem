@@ -16,17 +16,18 @@ void render();
 void recursRender(Node& it, glm::fmat4 &mat = glm::fmat4(1.0f));
 
 void renderQuad();
-
-void drawFramebuffer();
 void drawQuad();
-void drawAsteroid();
+void drawFramebuffer();
+
 void drawPlanet(Node& it);
 void drawSun(Node& it);
 void drawEarth(Node& it);
 void drawOrbit(Node& it, glm::fmat4& mat);
 void drawStars();
+void drawAsteroid();
 void drawSkybox();
 
+void initializeFramebuffer();
 void initializeOrbits();
 void initializeStars(unsigned int amount);
 void initializeAsteroids();

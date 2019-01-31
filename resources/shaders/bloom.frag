@@ -8,6 +8,7 @@ uniform sampler2D bloomBlur;
 uniform float exposure;
 uniform float gamma;
 uniform bool blur;
+uniform bool bloomFlag;
 uniform bool grayscale;
 uniform bool verticalMirror;
 uniform bool horizontalMirror;
@@ -17,8 +18,9 @@ const float offset = 1.0 / 300.0;
 void main() {             
     vec3 hdrColor = texture(scene, TexCoords).rgb;      
     vec3 bloomColor = texture(bloomBlur, TexCoords).rgb;
-    
-    hdrColor += bloomColor; // additive blending
+    if (bloomFlag) {
+        hdrColor += bloomColor; // additive blending
+    }
     // tone mapping
     vec3 result = vec3(1.0) - exp(-hdrColor * exposure);
     // also gamma correct while we're at it       
@@ -39,9 +41,9 @@ void main() {
         );        
 
         float kernel[9] = float[](
-            1.0 / 16, 2.0 / 16, 1.0 / 16,
-            2.0 / 16, 4.0 / 16, 2.0 / 16,
-            1.0 / 16, 2.0 / 16, 1.0 / 16  
+            1.0 / 16.0, 2.0 / 16.0, 1.0 / 16.0,
+            2.0 / 16.0, 4.0 / 16.0, 2.0 / 16.0,
+            1.0 / 16.0, 2.0 / 16.0, 1.0 / 16.0  
         );
 
         vec3 sampleTex[9];
@@ -56,13 +58,10 @@ void main() {
         FragColor = vec4(col, 1.0);
     }
 
-    if (verticalMirror && horizontalMirror) {
-        FragColor = texture(scene, vec2(1 - TexCoords.x, 1 - TexCoords.y));
+    if (horizontalMirror) {
+		FragColor = texture(scene, vec2(TexCoords.x, 1 - TexCoords.y));
     }
-    else if (horizontalMirror) {
-    	FragColor = texture(scene, vec2(TexCoords.x, 1 - TexCoords.y));
-    }
-    else if (verticalMirror) {
+    if (verticalMirror) {
         FragColor = texture(scene, vec2(1 - TexCoords.x, TexCoords.y));
     }
 

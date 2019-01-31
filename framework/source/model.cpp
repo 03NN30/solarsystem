@@ -13,7 +13,7 @@ vertexInfo split(const std::string& str) {
         iss >> subs;
         temp.push_back(::atof(subs.c_str()));
     } while (iss);
-
+    
     return {temp.at(0), temp.at(1), temp.at(2)};
 }
 

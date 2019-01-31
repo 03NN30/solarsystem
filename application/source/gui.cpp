@@ -86,6 +86,8 @@ void drawSettings() {
     ImGui::SliderFloat(" lightLinear", &lightLinear, 0.0f, 0.1f);
     ImGui::SliderFloat(" lightQuadratic", &lightQuadratic, 0.0f, 0.05f);
     ImGui::Text("Post processing:");
+    ImGui::Checkbox("bloom", &bloomFlag);
+    ImGui::Checkbox("planet bloom", &planetBloom);
     ImGui::Checkbox("blur", &blur);
     ImGui::Checkbox("grayscale", &grayscale);
     ImGui::Checkbox("vertical mirror", &verticalMirror);
