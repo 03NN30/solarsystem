@@ -1,5 +1,5 @@
-# Solar System 
-v0.4 [WIP]
+# Solar System [WIP]
+v0.4 
 
 using:
 - SDL2.0
