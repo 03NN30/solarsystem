@@ -19,6 +19,7 @@ void renderQuad();
 void drawQuad();
 void drawFramebuffer();
 
+void drawRing(Node& it, glm::fmat4 &mat);
 void drawPlanet(Node& it);
 void drawSun(Node& it);
 void drawEarth(Node& it);

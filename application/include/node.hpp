@@ -35,7 +35,8 @@ public:
     
     float &getSize() { return size; }
     float &getRotationSpeed() { return rotationSpeed; }
-    float &getDistanceFromOrigin() { return distanceFromOrigin; }    
+    float &getDistanceFromOrigin() { return distanceFromOrigin; }  
+    float &getSelfRotSpeed() { return selfRotSpeed; }   
 
     void setTexture();
     Texture &getTexture() { return texture; }

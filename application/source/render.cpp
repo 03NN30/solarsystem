@@ -25,12 +25,14 @@ Shader quadShader("quad");
 Shader blurShader("blur");
 Shader bloomShader("bloom");
 Shader sunBloomShader("sunBloom");
-Shader asteroidShader("basic");
+Shader asteroidShader("asteroid");
+Shader ringShader("easy");
 
 Model asteroid("rock.obj");
 Model sphere("sphere.obj");
 Model cube("skybox.obj");
 Model quad("quad.obj");
+Model ring("planetring.obj");
 
 modelObject orbitModel;
 modelObject starModel;
@@ -69,6 +71,7 @@ unsigned int pingpongColorbuffers[2];
 unsigned int attachments[2] = { GL_COLOR_ATTACHMENT0, GL_COLOR_ATTACHMENT1 };
 unsigned int rboDepth;
 
+Texture ringTex("planets/saturnring.jpg");
 Texture asteroidTexture("rock.jpg");
 unsigned int amount = 1000;
 glm::mat4* modelMatrices;
@@ -86,13 +89,16 @@ void setup() {
     bloomShader.createShader();
     sunBloomShader.createShader();
     asteroidShader.createShader();
+    ringShader.createShader();
     // setting geometries
     sphere.setGeometry(GL_TRIANGLES); 
     cube.setGeometry(GL_TRIANGLES); 
     quad.setGeometry(GL_TRIANGLES);
     asteroid.setGeometry(GL_TRIANGLES);
+    ring.setGeometry(GL_TRIANGLES);
     // initializing scene graph
     sg->setName("root");
+                                      //dis  //rot //size //self
     sg->addChild(new Node("sun",      0.0f,   0.0f, 1.0f, 0.5f, "planets/2k_sun.jpg"));
     sg->addChild(new Node("mercury",  3.0f,  0.06f, 0.2f, 1.0f, "planets/2k_mercury.jpg"));
     sg->addChild(new Node("venus",    6.0f,  0.05f, 0.2f, 1.0f, "planets/2k_venus.jpg"));         
@@ -112,6 +118,9 @@ void setup() {
     initializeAsteroids();
     initializeFramebuffer();
     //Framebuffer::get();
+
+    ringTex.setTexturePath("planets/saturnring.jpg");
+    ringTex.set2DTexture(GL_REPEAT, GL_LINEAR);
 }
 
 void update() {
@@ -157,6 +166,9 @@ void recursRender(Node& it, glm::fmat4& mat) {
                     drawEarth(it);
                 } else {
                     drawPlanet(it);  
+                    if (it.getName() == "saturn") {
+                        drawRing(it, mat);
+                    }
                 }
                 if (orbits) {
                     drawOrbit(it, mat);
@@ -235,8 +247,8 @@ void initializeAsteroids() {
 
     modelMatrices = new glm::mat4[amount];
     srand(SDL_GetTicks()); // initialize random seed	
-    float radius = 40.0;
-    float offset = 2.5f;
+    float radius = 13.5f;
+    float offset = 0.5f;
     for (unsigned int i = 0; i < amount; i++) {
         glm::mat4 model = glm::mat4(1.0f);
         // 1. translation: displace along circle with 'radius' in range [-offset, offset]
@@ -250,7 +262,7 @@ void initializeAsteroids() {
         model = glm::translate(model, glm::vec3(x, y, z));
 
         // 2. scale: Scale between 0.05 and 0.25f
-        float scale = (rand() % 20) / 100.0f + 0.05;
+        float scale = (rand() % 2) / 100.0f + 0.01;
         model = glm::scale(model, glm::vec3(scale));
 
         // 3. rotation: add random rotation around a (semi)randomly picked rotation axis vector
@@ -379,6 +391,26 @@ void drawQuad() {
     quad.draw();
 }
 
+void drawRing(Node& it, glm::fmat4 &mat) {
+    float timer = float(SDL_GetTicks()) / 1000.0f;
+    ringShader.use();
+    glm::fmat4 model = mat;
+    float rot = timer * it.getRotationSpeed() * speedSlider;
+    float selfRot = timer * it.getSelfRotSpeed() * speedSlider;
+    model = glm::rotate(model, rot, glm::fvec3{0.0f, 1.0f, 0.0f});
+    model = glm::translate(model, glm::fvec3 {0.0f, 0.0f, it.getDistanceFromOrigin()});
+    model = glm::rotate(model, selfRot, glm::fvec3{0.0f, 1.0f, 0.0f}); 
+    model = glm::scale(model, glm::vec3(1.3f, 1.3f, 1.3f));
+
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, ringTex.getID());
+    ringShader.setInt("texture1", 0);
+    
+    ringShader.setModel(model);
+    ring.setVertexAttributes();
+    ring.draw();
+}
+
 void drawOrbit(Node& it, glm::fmat4 &mat) {
     orbitShader.use();
 
@@ -440,6 +472,7 @@ void drawPlanet(Node& it) {
 }
 
 void drawAsteroid() {
+    float timer = float(SDL_GetTicks()) / 1000.0f;
     for (unsigned int i = 0; i < amount; i++)
     {
         asteroidShader.use();
@@ -447,8 +480,11 @@ void drawAsteroid() {
         asteroidShader.setInt("texture1", 0);
         glActiveTexture(GL_TEXTURE0);
         asteroidTexture.bind();
-    
+
         asteroidShader.setModel(modelMatrices[i]);
+        asteroidShader.setfVec3("lightPosition", sg->getLocalTransform()[3][0], sg->getLocalTransform()[3][1], sg->getLocalTransform()[3][2]);
+        asteroidShader.setfVec3("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
+        asteroidShader.setfVec3("viewPos", Camera::get().position);
 
         asteroid.setVertexAttributes();
         asteroid.draw(); 
@@ -553,6 +589,7 @@ void uploadView() {
     orbitShader.setView(view);
     sunBloomShader.setView(view);
     asteroidShader.setView(view);
+    ringShader.setView(view);
 }
 
 void uploadProjection() {
@@ -565,6 +602,7 @@ void uploadProjection() {
     orbitShader.setProjection(projection);
     sunBloomShader.setProjection(projection);
     asteroidShader.setProjection(projection);
+    ringShader.setProjection(projection);
 }
 
 
