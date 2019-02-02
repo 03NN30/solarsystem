@@ -119,7 +119,7 @@ void setup() {
     initializeFramebuffer();
     //Framebuffer::get();
 
-    ringTex.setTexturePath("planets/saturnring.jpg");
+    ringTex.setTexturePath("planets/saturnringcolor.jpg");
     ringTex.set2DTexture(GL_REPEAT, GL_LINEAR);
 }
 
@@ -488,6 +488,7 @@ void drawAsteroid() {
 
         asteroid.setVertexAttributes();
         asteroid.draw(); 
+        //asteroid.instanceDraw(amount); 
     }    
 }
 

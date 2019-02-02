@@ -40,6 +40,7 @@ public:
     void setGeometry(GLenum draw_mode);
     void setVertexAttributes();
     void draw();
+    void instanceDraw(int amount);
 
 private:
     std::vector<glm::vec3> out_vertices;

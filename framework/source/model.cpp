@@ -213,6 +213,19 @@ void Model::draw() {
     }
 }
 
+void Model::instanceDraw(int amount) {
+    glBindVertexArray(model_object.VAO);
+    glDrawArraysInstanced(model_object.draw_mode, 0, model_object.num_elements, amount);
+
+    if (gotPosition && gotTexture && gotNormal && gotIndex) {
+        glDisableVertexAttribArray(1);
+        glDisableVertexAttribArray(2);
+        glDisableVertexAttribArray(3);
+    } else {
+        std::cerr << "ERROR::MODEL::DISABLE VERTEX ATTRIBUTES" << std::endl;
+    }
+}
+
 modelObject &Model::getModelObject() {
     return model_object;
 }
