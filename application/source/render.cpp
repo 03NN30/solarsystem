@@ -61,6 +61,7 @@ float glow             = 2.371f;
  bool realism          = false;
  bool bloomFlag        = true;
  bool planetBloom      = true;
+ bool planetRing       = false;
 
 unsigned int quadVAO = 0;
 unsigned int quadVBO;
@@ -166,7 +167,7 @@ void recursRender(Node& it, glm::fmat4& mat) {
                     drawEarth(it);
                 } else {
                     drawPlanet(it);  
-                    if (it.getName() == "saturn") {
+                    if (it.getName() == "saturn" && planetRing) {
                         drawRing(it, mat);
                     }
                 }
@@ -204,7 +205,7 @@ void initializeFramebuffer() {
         glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, colorBuffers[i], 0);
     }
     // create and attach depth buffer (renderbuffer)
-    glGenRenderbuffers(1, &rboDepth);
+    glGenRenderbuffers(1, &rboDepth); 
     glBindRenderbuffer(GL_RENDERBUFFER, rboDepth);
     glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT, screenWidth, screenHeight);
     glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, rboDepth);

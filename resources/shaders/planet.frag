@@ -35,7 +35,6 @@ void main() {
         vec3 diffuse = diff * vec3(texture(texture1, passTexCoord)).xyz;
 
         // specular
-        vec3 reflectDir = reflect(-lightDirection, normal);
         vec3 centreDirection = normalize(lightDirection + viewDir);  
         float spec = pow(max(dot(normal, centreDirection), 0.0), Shininess);
         vec3 specular = vec3(Reflectivity) * spec;

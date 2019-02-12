@@ -36,6 +36,7 @@ extern  bool verticalMirror;
 extern  bool horizontalMirror;
 extern  bool bloomFlag;
 extern  bool planetBloom;
+extern  bool planetRing;
 
 extern Node* sg;
 

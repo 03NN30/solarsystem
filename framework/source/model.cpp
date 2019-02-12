@@ -215,7 +215,7 @@ void Model::draw() {
 
 void Model::instanceDraw(int amount) {
     glBindVertexArray(model_object.VAO);
-    glDrawArraysInstanced(model_object.draw_mode, 0, model_object.num_elements, amount);
+    glDrawElementsInstanced(model_object.draw_mode, model_object.num_elements, GL_UNSIGNED_INT, 0, amount);
 
     if (gotPosition && gotTexture && gotNormal && gotIndex) {
         glDisableVertexAttribArray(1);

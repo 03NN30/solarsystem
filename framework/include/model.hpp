@@ -42,6 +42,8 @@ public:
     void draw();
     void instanceDraw(int amount);
 
+    std::vector<glm::vec3> getVertices() { return out_vertices; }
+
 private:
     std::vector<glm::vec3> out_vertices;
     std::vector<glm::vec2> out_textures;

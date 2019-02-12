@@ -99,6 +99,7 @@ void drawSettings() {
     ImGui::Checkbox("outline", &planetOutline);
     ImGui::Checkbox("show orbits", &orbits);
     ImGui::Checkbox("show stars", &stars);
+    ImGui::Checkbox("show ring", &planetRing);
     ImGui::Checkbox("realistic earth", &realism);
 }
 
