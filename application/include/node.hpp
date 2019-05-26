@@ -28,8 +28,8 @@ public:
     void setParent(Node* node);
     Node* &getParent() { return parent; }
 
-    void setLocalTransform(glm::fmat4& mat = glm::fmat4(1.0f));
-    void setWorldTransform(glm::fmat4& mat = glm::fmat4(1.0f));
+    void setLocalTransform(glm::fmat4& mat);
+    void setWorldTransform(glm::fmat4& mat);
     glm::fmat4 &getLocalTransform() { return localTransform; }
     glm::fmat4 &getWorldTransform() { return worldTransform; }
     

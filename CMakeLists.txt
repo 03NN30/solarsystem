@@ -6,7 +6,7 @@ find_package(OpenGL REQUIRED)
 include_directories(${OPENGL_INCLUDE_DIRS})
 
 # GLEW
-include_directories(external/GLEW/include)
+#include_directories(external/GLEW/include)
 
 # SDL2
 include_directories(external/SDL/include)
@@ -51,14 +51,28 @@ file (GLOB IMGUI_FILES
     "external/IMGUI/*.cpp"
 )
 
+find_package(GLEW REQUIRED)
+if (GLEW_FOUND)
+    include_directories(${GLEW_INCLUDE_DIRS})
+    link_libraries(${GLEW_LIBRARIES})
+endif()
+
+find_package(SDL2 REQUIRED)
+#find_package(SDL2_image REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
+
+
 # exe 
 add_executable(SolarSystem application/source/main.cpp ${SOURCES} ${HEADERS} ${IMGUI_FILES})
 
 # link libraries against exe
 target_link_libraries (SolarSystem 
-    SDL2main
-    SDL2 
+    #SDL2main
+    #SDL2
     SDL2_image
     ${OPENGL_LIBRARIES}
-    glew32s
+    ${GLEW_LIBRARIES}
+    #glew32s
+    ${SDL2_LIBRARIES}
+    ${SDL2_IMAGE_LIBRARIES}
 )

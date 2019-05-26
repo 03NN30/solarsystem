@@ -13,7 +13,7 @@
 void setup();
 void update();
 void render();
-void recursRender(Node& it, glm::fmat4 &mat = glm::fmat4(1.0f));
+void recursRender(Node& it, glm::fmat4 &mat);
 
 void renderQuad();
 void drawQuad();

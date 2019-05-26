@@ -48,7 +48,7 @@ float lightConstant    = 1.0f;
 float lightLinear      = 0.001f;
 float lightQuadratic   = 0.001f;
 float exposure         = 1.237f;
-float gamma            = 0.619f;
+float gamma_            = 0.619f;
 float glow             = 2.371f;
   int bloom            = 1;
  bool planetOutline    = false;
@@ -143,8 +143,8 @@ void render() {
         }
 
         drawAsteroid();
-
-        recursRender(*sg);
+        glm::fmat4 temp = glm::fmat4(1.0f);
+        recursRender(*sg, temp);
 
         glDepthFunc(GL_LEQUAL);
         drawSkybox();  
@@ -361,7 +361,7 @@ void drawFramebuffer() {
     glBindTexture(GL_TEXTURE_2D, pingpongColorbuffers[!horizontal]); 
     //glBindTexture(GL_TEXTURE_2D, Framebuffer::get().getpingpongColorBuffers(!horizontal));
 
-    bloomShader.setFloat("gamma", gamma);
+    bloomShader.setFloat("gamma", gamma_);
     bloomShader.setBool("blur", blur);
     bloomShader.setBool("grayscale", grayscale);
     bloomShader.setBool("verticalMirror", verticalMirror);
@@ -386,7 +386,7 @@ void drawQuad() {
     quadShader.setBool("verticalMirror", verticalMirror);
     quadShader.setBool("horizontalMirror", horizontalMirror);
     quadShader.setFloat("exposure", exposure);
-    quadShader.setFloat("gamma", gamma);
+    quadShader.setFloat("gamma", gamma_);
 
     quad.setVertexAttributes();
     quad.draw();

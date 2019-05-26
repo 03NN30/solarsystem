@@ -93,7 +93,7 @@ void drawSettings() {
     ImGui::Checkbox("vertical mirror", &verticalMirror);
     ImGui::Checkbox("horizontal mirror", &horizontalMirror);
     ImGui::SliderFloat(" exposure", &exposure, 0.0f, 10.0f);
-    ImGui::SliderFloat(" gamma", &gamma, 0.0f, 10.0f);
+    ImGui::SliderFloat(" gamma", &gamma_, 0.0f, 10.0f);
     ImGui::SliderFloat(" glow", &glow, 1.0, 3.0);
     ImGui::Separator();
     ImGui::Checkbox("outline", &planetOutline);

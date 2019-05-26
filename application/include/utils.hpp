@@ -26,7 +26,7 @@ extern float lightConstant;
 extern float lightLinear;
 extern float lightQuadratic;
 extern float exposure;
-extern float gamma;
+extern float gamma_;
 extern float glow;
 extern   int bloom;
 extern  bool planetOutline;

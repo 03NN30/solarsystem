@@ -6,9 +6,9 @@
 #include <SDL_image.h>
 #undef main
 #define GLEW_STATIC
-#include <gl\glew.h>
+#include <GL/glew.h>
 #include <SDL_opengl.h>
-#include <gl\glu.h>
+#include <GL/glu.h>
 
 #include <imgui.h>
 #include <imgui_impl_sdl.h>

@@ -5,7 +5,10 @@
 
 #include <iostream>
 
-int frame = 0, time, timebase = 0, fps; 
+int frame = 0;
+int time_;
+int timebase = 0;
+int fps; 
 
 Application::Application() {}
 
@@ -88,11 +91,11 @@ void Application::updateFunc() {
 void Application::renderFunc() {    
     // fps counter in window title
     frame++;
-	time = SDL_GetTicks();
+	time_ = SDL_GetTicks();
 
-	if (time - timebase > 1000) {
-		fps = frame * 1000.0 / (time - timebase);
-	 	timebase = time;
+	if (time_ - timebase > 1000) {
+		fps = frame * 1000.0 / (time_ - timebase);
+	 	timebase = time_;
 		frame = 0;
 	}
     
