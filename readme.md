@@ -1,4 +1,4 @@
-# Solar System [WIP]
+# Solar System [DEPRECATED]
 v0.4 
 
 using:
