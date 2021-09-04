@@ -1,7 +1,7 @@
 #ifndef CONTROLS_HPP
 #define CONTROLS_HPP
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 void controller();
 

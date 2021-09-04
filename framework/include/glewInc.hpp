@@ -1,11 +1,11 @@
 #ifndef GLEWINC_HPP
 #define GLEWINC_HPP
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #undef main
 #define GLEW_STATIC
-#include <gl\glew.h>
-#include <SDL_opengl.h>
-#include <gl\glu.h>
+#include <GL/glew.h>
+#include <GL/glu.h>
+#include <SDL2/SDL_opengl.h>
 
-#endif 
+#endif
